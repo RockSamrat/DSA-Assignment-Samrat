@@ -5,18 +5,31 @@ using namespace std;
 int main()
 {
     int grade;
-    cout << "What is grade? ";
+    cout << "What is your marks? ";
     cin >> grade;
-    if (grade => 80)
+    
+    if (grade >= 100)
+    {
+        cout << "Enter valid marks!" << endl;
+    }
+    else if (grade >= 80)
     {
         cout << "Got grade A." << endl;
     }
-    else if (num1 < num2)
+    else if (grade >= 60)
     {
-        cout << "Number 2 is greater." << endl;
+        cout << "Got Grade B." << endl;
+    }
+    else if (grade >= 40)
+    {
+        cout << "Got Grade C." << endl;
+    }
+    else if (grade <= 40 && grade >= 0)
+    {
+        cout << "Got Grade F." << endl;
     }
     else
     {
-        cout << "Number 1  equals to Number 2." << endl;
+        cout << "Enter valid marks!" << endl;
     }
 }
